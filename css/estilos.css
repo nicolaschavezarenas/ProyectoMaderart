@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+.bgnavegador, #footer{
+    background-color: #F2D479;
+    color:white;
+}
+.logo{
+    max-width: 200px;
+}
+.imgcategoria{
+    max-width: 100%;
+}
+.categoriaindex{
+    transition: all 250ms;
+    margin-bottom: 15px;
+}
+.categoriaindex:hover{
+    transform: scale(1.1);
+}
