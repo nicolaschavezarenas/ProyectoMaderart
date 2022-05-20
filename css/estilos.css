@@ -21,3 +21,17 @@ body{
 .categoriaindex:hover{
     transform: scale(1.1);
 }
+.subtitulo{
+    background: rgb(116,115,125);
+    background: linear-gradient(90deg, rgba(116,115,125,1) 1%, rgba(124,123,116,1) 40%, rgba(223,223,213,1) 100%);
+    color:white;
+}
+.imagen_historia{
+    max-width: 50%;
+    border: 3px solid gray;
+    border-radius: 10px;
+    margin:10px 0;
+}
+.mapa iframe{
+    width: 100%;
+}
