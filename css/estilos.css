@@ -53,3 +53,9 @@ body{
     transform: scale(1.0);
     color:black;
 }
+@media all and (max-width:576px){
+    .tabladespacho{
+        font-size: 0.6rem;
+        max-width: 100%;
+    }
+}
