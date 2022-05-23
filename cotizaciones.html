@@ -21,29 +21,30 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item px-3">
-							<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+							<a class="nav-link" href="index.html">Inicio</a>
 						</li>
 						<li class="nav-item px-3">
 							<a class="nav-link" href="historia.html">Nosotros</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="productos.html">Productos</a>
+							<a class="nav-link" href="galeria.html">Galería</a>
 						</li>
 						<li class="nav-item px-3">
 							<a class="nav-link" href="pedidos.html">Cómo pedir</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link active" href="contacto.html">Contacto</a>
+							<a class="nav-link active"  aria-current="page" href="cotizaciones.html">Cotizaciones</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
-	<div class="col-10 offset-1 py-1 py-md-3 py-xl-5" >
-		<h3>Formulario de Cotizaciones</h3>
-		<h5>Ingresa los detalles de tu pedido para realizar una cotización.</h5>
+
+	<div class="subtitulo my-1 my-md-3 my-xl-5">
+		<h3 class="text-center">Formulario Cotizaciones</h3>
 	</div>
+	<h5 class="col-10 offset-1">Ingresa los detalles de tu pedido para realizar una cotización.</h5>
 	<form class="row g-3 col-10 offset-1 pb-3">
 		<div class="col-md-6">
 			<label for="nombreyapellido" class="form-label">Nombre y Apellido</label>
@@ -114,9 +115,9 @@
 		  	</div>
 		</div>
 		<div class="col-2 offset-5">
-		  	<button type="submit" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#botonEnviar">Enviar</button>
+		  	<button type="button" class="btn botoncotizaciones" data-bs-toggle="modal" data-bs-target="#botonEnviar">Enviar</button>
 		</div>
-		<!-- Modal
+		<!-- Modal-->
 		<div class="modal fade" id="botonEnviar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 			<div class="modal-content">
@@ -128,11 +129,11 @@
 					Cotización recibida, en 3 días hábiles te enviaremos los detalles a través de tu correo.
 				</div>
 				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				<button type="button submit" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 			</div>
-		</div>-->
+		</div>
 	</form>
 	<div id="footer" >
 		<div class="text-center text-lg-start text-muted col-10 offset-1">
