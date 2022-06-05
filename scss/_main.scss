@@ -2,26 +2,62 @@ body{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 500;
 }
-.bgnavegador, #footer{
+.bgnavegador{
     background-color: $color-principal;
     color:white;
 }
-.logo{
-    max-width: 200px;
-}
-.subtitulo{
-    background-color: $color-secundario;
+#footer{
+    background-color: $color-principal;
     color:white;
 }
-.categoriaindex{
-    transition: all 250ms;
-    margin-bottom: 15px;
-    &:hover{
-        transform: scale(1.1);
+@mixin anchoMaximo($maxwidth){
+    max-width: $maxwidth;
+}
+.logo{
+    @include anchoMaximo(30%);
+    img{
+        @include anchoMaximo(100%);
     }
 }
+.subtitulo{
+    background: $color-secundario;
+    color:white;
+    border-radius: 5px;
+    font-size: 20px;
+    @media all and (min-width:576px) and (max-width:768px){
+        font-size: 1.5rem;
+    }
+    @media all and (min-width:768px){
+        font-size:2rem;
+    }
+}
+.seccioncategorias{
+    .categoriaindex{
+        transition: all 250ms;
+        margin-bottom: 15px;
+        &:hover{
+            transform: scale(1.1);
+        }
+        p{
+            font-weight: 700;
+        }
+        @media all and (max-width:576px){
+            font-size: 0.8rem;
+            @include anchoMaximo(45%)
+        }
+        @media all and (min-width:576px) and (max-width:768px){
+            font-size: 1rem;
+            @include anchoMaximo(45%)
+        }
+        @media all and (min-width:768px){
+            font-size:1.2rem;
+            @include anchoMaximo(30%)
+        }
+    }
+}
+
 .imagen_historia{
-    max-width: 50%;
+    @include anchoMaximo(50%);
     border: 3px solid gray;
     border-radius: 10px;
     margin:10px 0;
@@ -32,10 +68,13 @@ body{
         width: 100%;
     }
 }
-.botoncotizaciones{
+%boton{
     background-color: $color-principal;
     color:$color-texto-principal;
     transition: all 250ms;
+}
+.botoncotizaciones{
+    @extend %boton;
     &:hover{
         transform: scale(1.3);
         background-color: $color-secundario;
@@ -53,7 +92,7 @@ body{
 .tabladespacho{
     @media all and (max-width:576px){
             font-size: 0.6rem;
-            max-width: 100%;
+            @include anchoMaximo(100%)
         }
 }
 .galeria-categorias{
@@ -64,14 +103,14 @@ body{
         transition: all 250ms;
         @media all and (max-width:576px){
             font-size: 0.8rem;
-            max-width: 45%;
+            @include anchoMaximo(45%)
         }
         @media all and (min-width:576px) and (max-width:768px){
             font-size: 0.9rem;
-            max-width: 30%;
+            @include anchoMaximo(30%)
         }
         @media all and (min-width:768px){
-            max-width: 24%;
+            @include anchoMaximo(24%)
         }
         .card-title{
             font-weight: 500;
