@@ -45,6 +45,12 @@
 <!--Galeria de Productos-->
 	<section class="col-10 offset-1">
 		<p class="subtitulo text-center my-1 my-md-3 my-xl-5">Galería de Productos</p>
+		<p class="texto-general">
+			Revisa nuestra galería de productos predefinida, si te interesa cotizar alguno o hacerle unos pequeños ajustes, haz clic en <span class="fw-bold">Cotizar, </span>y agrega su código en el formulario de cotizaciones.
+		</p>
+		<p class="texto-general">
+			Si lo que buscas no está en la Galería ¡No te preocupes! Puedes cotizar tu producto personalizado, agregar una descripción detallada, cargar imágenes de referencia y más en nuestro <a class="fw-bold text-decoration-none palabraEnlace" href="cotizaciones.html">Formulario de Cotizaciones.</a>	
+		</p>
 		<div class="accordion accordion-flush" id="accordionGaleria">
 			<!--Cocina-->
 			<div class="accordion-item" id="cocina">
@@ -115,7 +121,7 @@
 						Muebles de Sala de Estar
 					</button>
 				</h2>
-				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionGaleria">
+				<div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionGaleria">
 					<div class="accordion-body">
 						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
 							<div class="card my-1 elemento-categoria">
@@ -177,7 +183,7 @@
 						Escritorios
 					</button>
 				</h2>
-				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionGaleria">
+				<div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionGaleria">
 					<div class="accordion-body">
 						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
 							<div class="card my-1 elemento-categoria">
@@ -239,7 +245,7 @@
 						Muebles de Dormitorio
 					</button>
 				</h2>
-				<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionGaleria">
+				<div id="flush-collapseFour" class="accordion-collapse collapse show" aria-labelledby="flush-headingFour" data-bs-parent="#accordionGaleria">
 					<div class="accordion-body">
 						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
 							<div class="card my-1 elemento-categoria">
@@ -301,7 +307,7 @@
 						Muebles de Terraza y Jardín
 					</button>
 				</h2>
-				<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionGaleria">
+				<div id="flush-collapseFive" class="accordion-collapse collapse show" aria-labelledby="flush-headingFive" data-bs-parent="#accordionGaleria">
 					<div class="accordion-body">
 						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
 							<div class="card my-1 elemento-categoria">
@@ -347,7 +353,7 @@
 						Muebles de Baño
 					</button>
 				</h2>
-				<div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionGaleria">
+				<div id="flush-collapseSix" class="accordion-collapse collapse show" aria-labelledby="flush-headingSix" data-bs-parent="#accordionGaleria">
 					<div class="accordion-body">
 						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
 							<div class="card my-1 elemento-categoria">
@@ -421,24 +427,43 @@
 		</div>
 		</div>
 	</div>
-<!-- Footer-->
-	<div id="footer" >
-		<div class="text-center text-lg-start text-muted col-10 offset-1">
-			<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-				<div class="me-5 d-none d-lg-block">
-					<span>Síguenos en nuestras redes sociales:</span>
-				</div>
-				<div>
-				<a href="https://www.facebook.com/maderart.chimbarongo" class="me-4 text-reset">
-					<img src="assets/facebook.png" alt="LogoFacebook" width="30" height="30">
+<!--Footer-->
+	<footer class="text-center" id="footer">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/maderart.chimbarongo" target="_blank" role="button">
+					<img src="assets/logos/facebook.png" alt="LogoFacebook">
 				</a>
-				<a href="https://www.instagram.com/maderart_chimbarongo/" class="me-4 text-reset">
-					<img src="assets/instagram.png" alt="LogoInstagram" width="30" height="30">
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/maderart_chimbarongo/" target="_blank" role="button">
+					<img src="assets/logos/instagram.png" alt="LogoInstagram">
 				</a>
-				</div>
 			</section>
+			<section>
+				<form>
+					<div class="row d-flex justify-content-center">
+							<div class="col-auto">
+								<p class="pt-2">
+									<strong>Suscríbete a nuestro Newsletter: </strong>
+								</p>
+							</div>
+							<div class="col-md-5 col-12">
+								<div class="form-outline form-white mb-4">
+									<input type="email" id="form5Example21" class="form-control" placeholder="Correo Electrónico"/>
+								</div>
+							</div>
+							<div class="col-auto">
+								<button type="submit" class="btn btn-outline-light mb-4">
+									Suscribir
+								</button>
+							</div>
+					</div>
+				</form>
+			</section>
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				© 2022 Copyright: Nicolás Chávez Arenas
+			</div>
 		</div>
-	</div>
+	</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
