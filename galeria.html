@@ -9,116 +9,419 @@
 	<link rel="stylesheet" type="text/css"href="scss/estilos.css">
     <title>Maderart - Galería Productos</title>
   </head>
-  <body>
+<body>
 <!--Navegador-->
-<div class="bgnavegador">
-	<nav class="navbar navbar-expand-lg navbar-light col-10 offset-1">
-		<div class="container-fluid">
-			<a class="logo" href="index.html">
-				<img src="assets/logos/Muebles Maderart.png" alt="logoMaderart">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item px-3">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item px-3">
-						<a class="nav-link" href="historia.html">Nosotros</a>
-					</li>
-					<li class="nav-item px-3">
-						<a class="nav-link active fw-bold" aria-current="page" href="galeria.html">Galería</a>
-					</li>
-					<li class="nav-item px-3">
-						<a class="nav-link" href="pedidos.html">Cómo pedir</a>
-					</li>
-					<li class="nav-item px-3">
-						<a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
-					</li>
-				</ul>
+	<div class="bgnavegador">
+		<nav class="navbar navbar-expand-lg navbar-light col-10 offset-1">
+			<div class="container-fluid">
+				<a class="logo" href="index.html">
+					<img src="assets/logos/Muebles Maderart.png" alt="logoMaderart">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item px-3">
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link" href="historia.html">Nosotros</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link active fw-bold" aria-current="page" href="galeria.html">Galería</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link" href="pedidos.html">Cómo pedir</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+<!--Galeria de Productos-->
+	<section class="col-10 offset-1">
+		<p class="subtitulo text-center my-1 my-md-3 my-xl-5">Galería de Productos</p>
+		<div class="accordion accordion-flush" id="accordionGaleria">
+			<!--Cocina-->
+			<div class="accordion-item" id="cocina">
+				<h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						Muebles de Cocina
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionGaleria">
+					<div class="accordion-body">
+						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/cocina/Comedor Poulette.jpg" class="card-img-top img-fluid" alt="Comedor Poulette Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Comedor Poulette</h5>
+									<p class="card-text"><span>Medidas: </span>120x90x80</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/cocina/Silla Victoria.jpg" class="card-img-top" alt="Silla Victoria Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Silla Victoria</h5>
+									<p class="card-text"><span>Medidas: </span>40x40x75</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/cocina/Tabla Tradicional.jpg" class="card-img-top" alt="Tabla Cocina Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Tabla de Cocina</h5>
+									<p class="card-text"><span>Medidas: </span>20x40x3</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/cocina/Estantería Cocina.jpg" class="card-img-top" alt="Estantería Cocina Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Estantería Cocina</h5>
+									<p class="card-text"><span>Medidas: </span>120x80x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/cocina/Mueble Cocina Alto.jpg" class="card-img-top" alt="Mueble Cocina Alto Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Mueble Cocina Alto</h5>
+									<p class="card-text"><span>Medidas: </span>120x50x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/cocina/Mueble con Lavaplatos.jpg" class="card-img-top" alt="Mueble con Lavaplatos Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Mueble con Lavaplatos</h5>
+									<p class="card-text"><span>Medidas: </span>20x40x3</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Sala de Estar-->
+			<div class="accordion-item" id="estar">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						Muebles de Sala de Estar
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionGaleria">
+					<div class="accordion-body">
+						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/estar/Bar Antonella.jpg" class="card-img-top img-fluid" alt="Bar Antonella Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Bar Antonella</h5>
+									<p class="card-text"><span>Medidas: </span>120x90x80</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/estar/Disquero Bicolor.jpeg" class="card-img-top" alt="Disquero Bicolor Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Disquero Bicolor</h5>
+									<p class="card-text"><span>Medidas: </span>40x40x75</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/estar/Librero Alto.jpg" class="card-img-top" alt="Librero Alto Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Librero Alto</h5>
+									<p class="card-text"><span>Medidas: </span>120x40x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/estar/Mesa de Centro.jpeg" class="card-img-top" alt="Mesa de Centro Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Mesa de Centro</h5>
+									<p class="card-text"><span>Medidas: </span>120x80x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/estar/Rac Julián.jpg" class="card-img-top" alt="Rac Julián Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Rac Julián</h5>
+									<p class="card-text"><span>Medidas: </span>120x50x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/estar/Repisa Marisol.jpeg" class="card-img-top" alt="Repisa Marisol Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Repisa Marisol</h5>
+									<p class="card-text"><span>Medidas: </span>20x40x3</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Escritorio-->
+			<div class="accordion-item" id="escritorio">
+				<h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+						Escritorios
+					</button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionGaleria">
+					<div class="accordion-body">
+						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/escritorio/Escritorio Nicole.jpg" class="card-img-top img-fluid" alt="Escritorio Nicole Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Escritorio Nicole</h5>
+									<p class="card-text"><span>Medidas: </span>80x90x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/escritorio/Escritorio Blanca.jpeg" class="card-img-top" alt="Escritorio Blanca Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Escritorio Blanca</h5>
+									<p class="card-text"><span>Medidas: </span>80x90x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/escritorio/Escritorio Constanza.jpg" class="card-img-top" alt="Escritorio Constanza Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Escritorio Constanza</h5>
+									<p class="card-text"><span>Medidas: </span>80x90x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/escritorio/Escritorio Elizabeth.jpg" class="card-img-top" alt="Escritorio Elizabeth Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Escritorio Elizabeth</h5>
+									<p class="card-text"><span>Medidas: </span>80x90x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/escritorio/Escritorio Patricia.jpeg" class="card-img-top" alt="Escritorio Patricia Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Escritorio Patricia</h5>
+									<p class="card-text"><span>Medidas: </span>80x90x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/escritorio/Escritorio Paz.jpg" class="card-img-top" alt="Escritorio Paz Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Escritorio Paz</h5>
+									<p class="card-text"><span>Medidas: </span>80x90x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Dormitorio-->
+			<div class="accordion-item" id="dormitorio">
+				<h2 class="accordion-header" id="flush-headingFour">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+						Muebles de Dormitorio
+					</button>
+				</h2>
+				<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionGaleria">
+					<div class="accordion-body">
+						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/dormitorio/Velador Eames.jpeg" class="card-img-top img-fluid" alt="Velador Eames Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Velador Eames</h5>
+									<p class="card-text"><span>Medidas: </span>40x40x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/dormitorio/Velador Alto.jpeg" class="card-img-top" alt="Velador Alto Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Velador Alto</h5>
+									<p class="card-text"><span>Medidas: </span>50x40x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/dormitorio/Base Cama Madera.webp" class="card-img-top" alt="Base Cama Madera Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Base Cama Madera</h5>
+									<p class="card-text"><span>Medidas: </span>200x200x50</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/dormitorio/Cómoda Blanca.jpeg" class="card-img-top" alt="Cómoda Blanca Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Cómoda Blanca</h5>
+									<p class="card-text"><span>Medidas: </span>100x80x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/dormitorio/Cómoda Nórdica.jpeg" class="card-img-top" alt="Cómoda Nórdica Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Cómoda Nórdica</h5>
+									<p class="card-text"><span>Medidas: </span>70x100x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/dormitorio/Rac Dormitorio.jpeg" class="card-img-top" alt="Rac Dormitorio Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Rac Dormitorio</h5>
+									<p class="card-text"><span>Medidas: </span>100x80x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Terraza-->
+			<div class="accordion-item" id="terraza">
+				<h2 class="accordion-header" id="flush-headingFive">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+						Muebles de Terraza y Jardín
+					</button>
+				</h2>
+				<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionGaleria">
+					<div class="accordion-body">
+						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/terraza/Casa Zack.jpg" class="card-img-top img-fluid" alt="Casa de Perro Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Casa Zack</h5>
+									<p class="card-text"><span>Medidas: </span>90x90x60</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/terraza/Comedor Terraza.jpg" class="card-img-top" alt="Comedor Terraza Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Comedor Terraza</h5>
+									<p class="card-text"><span>Medidas: </span>120x100x75</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/terraza/Living Terraza.webp" class="card-img-top" alt="Living Terraza Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Living Terraza</h5>
+									<p class="card-text"><span>Medidas: </span>200x200x70</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/terraza/Silla Terraza Blanca.jpg" class="card-img-top" alt="Silla Terraza Blanca Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Silla Terraza Blanca</h5>
+									<p class="card-text"><span>Medidas: </span>120x80x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Baño-->
+			<div class="accordion-item" id="baño">
+				<h2 class="accordion-header" id="flush-headingSix">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+						Muebles de Baño
+					</button>
+				</h2>
+				<div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionGaleria">
+					<div class="accordion-body">
+						<div class="d-flex flex-wrap justify-content-evenly galeria-categorias">
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/baño/Lavatorio Ocre.jpg" class="card-img-top img-fluid" alt="Lavatorio Ocre Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Lavatorio Ocre</h5>
+									<p class="card-text"><span>Medidas: </span>60x50x30</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/baño/Repisa Vanitorio Negra.jpg" class="card-img-top" alt="Repisa Vanitorio Negra Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Repisa Vanitorio Negra</h5>
+									<p class="card-text"><span>Medidas: </span>150x30x20</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/baño/Repisa Vanitorio Bicolor.webp" class="card-img-top" alt="Repisa Vanitorio Bicolor Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Repisa Vanitorio Bicolor</h5>
+									<p class="card-text"><span>Medidas: </span>150x30x20</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/baño/Isla Baño Doble.jpg" class="card-img-top" alt="Isla Baño Doble Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Isla Baño Doble</h5>
+									<p class="card-text"><span>Medidas: </span>80x60x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/baño/Isla Baño Mini.jpg" class="card-img-top" alt="Isla Baño Mini Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Isla Baño Mini</h5>
+									<p class="card-text"><span>Medidas: </span>40x60x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+							<div class="card my-1 elemento-categoria">
+								<img src="assets/Productos/baño/Isla Negra Cajones.jpg" class="card-img-top" alt="Isla Negra Cajones Maderart">
+								<div class="card-body">
+									<h5 class="card-title">Isla Negra Cajones</h5>
+									<p class="card-text"><span>Medidas: </span>40x60x40</p>
+									<button type="button" class="btn botongaleria" data-bs-toggle="modal" data-bs-target="#botonCotizar">Cotizar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</nav>
-</div>
-    <div class="flex-wrap">
-		<div class="subtitulo my-1 my-md-3 my-xl-5">
-			<h3 class="text-center">Galería de Productos</h3>
+	</section>
+<!-- Modal-->
+	<div class="modal fade" id="botonCotizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Cotizar Producto</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				Añade el código <span class="fw-bold">[Código Producto]</span> en el Formulario de Cotizaciones para cotizar este producto.
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
 		</div>
-		<div class="col-10 offset-1 galeria-categorias">
-			<h3>Muebles de Cocina</h3>
-			<section class="d-flex flex-wrap justify-content-evenly">
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/Comedor Poulette.jpg" class="card-img-top img-fluid" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Comedor Poulette</h5>
-						<p class="card-text"><span>Medidas: </span>120x90x80</p>
-						<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-					</div>
-				</div>
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/cocina3.jpg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Silla Victoria</h5>
-						<p class="card-text"><span>Medidas: </span>40x40x75</p>
-						<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-					</div>
-				</div>
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/cocina2.jpg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Tabla de Cocina</h5>
-						<p class="card-text"><span>Medidas: </span>20x40x3</p>
-						<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-					</div>
-				</div>
-			</section>
-			<h3>Muebles de Sala de Estar</h3>
-			<section class="d-flex flex-wrap justify-content-evenly">
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/Bar Antonella.jpg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Bar Antonella</h5>
-						<p class="card-text"><span>Medidas: </span>90x90x40</p>
-						<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-					</div>
-				</div>
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/Rac Julián.jpg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Rac Julián</h5>
-						<p class="card-text"><span>Medidas: </span>70x70x70</p>
-						<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-					</div>
-				</div>
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/Repisa Marisol.jpeg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Repisa Marisol</h5>
-						<p class="card-text"><span>Medidas: </span>70x70x70</p>
-						<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-					</div>
-				</div>
-				<!--<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/estar4.jpeg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Mueble de Cocina</h5>
-						<p class="card-text"><span>Medidas: </span>70x70x70</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
-				<div class="card my-1 elemento-categoria" style="width: 18rem;">
-					<img src="assets/estar5.jpeg" class="card-img-top" alt="Cocina1">
-					<div class="card-body">
-						<h5 class="card-title">Mueble de Cocina</h5>
-						<p class="card-text"><span>Medidas: </span>70x70x70</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>-->
-			</section>
 		</div>
 	</div>
+<!-- Footer-->
 	<div id="footer" >
 		<div class="text-center text-lg-start text-muted col-10 offset-1">
 			<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">

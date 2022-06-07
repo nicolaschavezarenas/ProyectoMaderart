@@ -42,7 +42,7 @@
 		</nav>
 	</div>
 <!--Carrusel de imágenes/banner-->
-    <div id="carouselExampleIndicators" class="carousel carousel-dark slide col-10 offset-1 py-1 py-md-3 py-xl-5" data-bs-ride="carousel">
+    <section id="carouselExampleIndicators" class="carousel carousel-dark slide col-10 offset-1 py-1 py-md-3 py-xl-5" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -50,76 +50,124 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img srcset="assets/banner/banner_concurso_mobile.png 576w, assets/banner/banner_concurso_desktop.png 1200w" src="assets/banner/banner_concurso_mobile.png" class="d-block w-100" alt="Concurso Maderart">
+				<a href="https://www.instagram.com/maderart_chimbarongo/" target="_blank">
+					<picture>
+						<source media="(max-width: 576px)" srcset="assets/banner/banner_concurso_mobile.png">
+  						<source media="(min-width: 576px)" srcset="assets/banner/banner_concurso_desktop.png">
+ 						<img class="d-block w-100" src="assets/banner/banner_concurso_mobile.png" alt="Concurso Maderart">
+					</picture>
+				</a>
 			</div>
 			<div class="carousel-item">
-				<img srcset="assets/banner/banner_historia_mobile.png 576w" src="assets/banner/banner_historia_mobile.png" class="d-block w-100" alt="Historia Maderart">
+				<a href="historia.html">
+					<picture>
+						<source media="(max-width: 576px)" srcset="assets/banner/banner_historia_mobile.png">
+  						<source media="(min-width: 576px)" srcset="assets/banner/banner_historia_desktop.png">
+ 						<img class="d-block w-100" src="assets/banner/banner_concurso_historia.png" alt="Historia Maderart">
+					</picture>
+				</a>
 		  	</div>
 		 	<div class="carousel-item">
-				<img srcset="assets/banner/banner_oferta_mobile.png 576w" src="assets/banner/banner_oferta_mobile.png" class="d-block w-100" alt="Oferta Mes Maderart">
+				 <a href="galeria.html#dormitorio">
+					<picture>
+						<source media="(max-width: 576px)" srcset="assets/banner/banner_oferta_mobile.png">
+  						<source media="(min-width: 576px)" srcset="assets/banner/banner_oferta_desktop.png">
+ 						<img class="d-block w-100" src="assets/banner/banner_oferta_mobile.png" alt="Oferta del Mes Maderart">
+					</picture>
+				 </a>
 		  	</div>
 		</div>
-	</div>
+	</section>
 <!--Categorías de Productos-->
 	<div class="subtitulo col-10 offset-1">
 		<p class="text-center">Categorías</p>
 	</div>
-	<div class="d-flex flex-wrap justify-content-evenly col-10 offset-1 py-1 py-md-3 py-xl-5 seccioncategorias">
+	<section class="d-flex flex-wrap justify-content-evenly col-10 offset-1 py-1 py-md-3 py-xl-5 seccioncategorias">
 		<div class="card categoriaindex">
-			<img src="assets/Productos/cocina/Comedor Poulette.jpg" class="card-img-top" alt="Comedor Poulette">
-			<div class="card-body">
-			  <p class="card-title">Cocina</p>
-			</div>
+			<a href="galeria.html#cocina" class="text-decoration-none palabraEnlace">
+				<img src="assets/Productos/cocina/Comedor Poulette.jpg" class="card-img-top" alt="Comedor Poulette">
+				<div class="card-body">
+					<p class="card-title">Cocina</p>
+				</div>
+			</a>
 		</div>
 		<div class="card categoriaindex">
-			<img src="assets/Productos/estar/Bar Antonella.jpg" class="card-img-top" alt="Bar Antonella">
-			<div class="card-body">
-			  <p class="card-title">Sala de Estar</p>
-			</div>
+			<a href="galeria.html#estar" class="text-decoration-none palabraEnlace">
+				<img src="assets/Productos/estar/Bar Antonella.jpg" class="card-img-top" alt="Bar Antonella">
+				<div class="card-body">
+				<p class="card-title">Sala de Estar</p>
+				</div>
+			</a>
 		</div>
 		<div class="card categoriaindex">
-			<img src="assets/Productos/escritorio/Escritorio Nicole.jpg" class="card-img-top" alt="Escritorio Nicole">
-			<div class="card-body">
-			  <p class="card-title">Escritorio</p>
-			</div>
+			<a href="galeria.html#escritorio" class="text-decoration-none palabraEnlace">
+				<img src="assets/Productos/escritorio/Escritorio Nicole.jpg" class="card-img-top" alt="Escritorio Nicole">
+				<div class="card-body">
+					<p class="card-title">Escritorio</p>
+				</div>
+			</a>
 		</div>
 		<div class="card categoriaindex">
-			<img src="assets/Productos/dormitorio/Velador Eames.jpeg" class="card-img-top" alt="Velador Eames">
-			<div class="card-body">
-			  <p class="card-title">Dormitorio</p>
-			</div>
+			<a href="galeria.html#dormitorio" class="text-decoration-none palabraEnlace">
+				<img src="assets/Productos/dormitorio/Velador Eames.jpeg" class="card-img-top" alt="Velador Eames">
+				<div class="card-body">
+					<p class="card-title">Dormitorio</p>
+				</div>
+			</a>
 		</div>
 		<div class="card categoriaindex">
-			<img src="assets/Productos/terraza/Comedor Terraza.jpg" class="card-img-top" alt="Mesa Terraza">
-			<div class="card-body">
-			  <p class="card-title">Terraza</p>
-			</div>
+			<a href="galeria.html#terraza" class="text-decoration-none palabraEnlace">
+				<img src="assets/Productos/terraza/Comedor Terraza.jpg" class="card-img-top" alt="Mesa Terraza">
+				<div class="card-body">
+					<p class="card-title">Terraza</p>
+				</div>
+			</a>
 		</div>
 		<div class="card categoriaindex">
-			<img src="assets/Productos/baño/Lavatorio Ocre.jpg" class="card-img-top" alt="Lavatorio Ocre">
-			<div class="card-body">
-			  <p class="card-title">Baño</p>
-			</div>
+			<a href="galeria.html#baño" class="text-decoration-none palabraEnlace">
+				<img src="assets/Productos/baño/Lavatorio Ocre.jpg" class="card-img-top" alt="Lavatorio Ocre">
+				<div class="card-body">
+					<p class="card-title">Baño</p>
+				</div>
+			</a>
 		</div>
-	</div>
+	</section>
 <!--Footer-->
-	<div id="footer" >
-		<div class="text-center text-lg-start text-muted col-10 offset-1">
-			<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-				<div class="me-5 d-none d-lg-block">
-					<span>Síguenos en nuestras redes sociales:</span>
-				</div>
-				<div>
-				<a href="https://www.facebook.com/maderart.chimbarongo" class="me-4 text-reset">
-					<img src="assets/logos/facebook.png" alt="LogoFacebook" width="30" height="30">
+	<footer class="text-center" id="footer">
+		<div class="container p-4">
+	  		<section class="mb-4">
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/maderart.chimbarongo" target="_blank" role="button">
+					<img src="assets/logos/facebook.png" alt="LogoFacebook">
 				</a>
-				<a href="https://www.instagram.com/maderart_chimbarongo/" class="me-4 text-reset">
-					<img src="assets/logos/instagram.png" alt="LogoInstagram" width="30" height="30">
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/maderart_chimbarongo/" target="_blank" role="button">
+		 			<img src="assets/logos/instagram.png" alt="LogoInstagram">
 				</a>
+	 	 	</section>
+	  <section>
+			<form>
+				<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Suscríbete a nuestro Newsletter: </strong>
+							</p>
+						</div>
+					<div class="col-md-5 col-12">
+						<div class="form-outline form-white mb-4">
+							<input type="email" id="form5Example21" class="form-control" placeholder="Correo Electrónico"/>
+						</div>
+					</div>
+					<div class="col-auto">
+						<button type="submit" class="btn btn-outline-light mb-4">
+							Suscribir
+						</button>
+					</div>
 				</div>
-			</section>
+			</form>
+	  </section>
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		© 2022 Copyright: Nicolás Chávez Arenas
 		</div>
-	</div>
+	</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

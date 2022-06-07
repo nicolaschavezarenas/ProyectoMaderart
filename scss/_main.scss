@@ -19,24 +19,15 @@ body{
         @include anchoMaximo(100%);
     }
 }
-/*.carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} arreglar para dejar botones abajo de imagenes*/
 .subtitulo{
     background: $color-secundario;
     color:white;
     border-radius: 5px;
     font-size: 20px;
-    @media all and (min-width:576px) and (max-width:768px){
+    @media all and (min-width:576px) and (max-width:992px){
         font-size: 1.5rem;
     }
-    @media all and (min-width:768px){
+    @media all and (min-width:992px){
         font-size:2rem;
     }
 }
@@ -54,22 +45,33 @@ body{
             font-size: 0.8rem;
             @include anchoMaximo(45%)
         }
-        @media all and (min-width:576px) and (max-width:768px){
+        @media all and (min-width:576px) and (max-width:992px){
             font-size: 1rem;
             @include anchoMaximo(45%)
         }
-        @media all and (min-width:768px){
+        @media all and (min-width:992px){
             font-size:1.2rem;
             @include anchoMaximo(30%)
         }
     }
 }
-
 .imagen_historia{
-    @include anchoMaximo(50%);
+    @include anchoMaximo(45%);
     border: 3px solid gray;
     border-radius: 10px;
     margin:10px 0;
+}
+.texto-general{
+    text-align: justify;
+    @media all and (max-width:576px){
+        font-size: 0.9rem;
+    }
+    @media all and (min-width:576px) and (max-width:992px){
+        font-size: 1rem;
+    }
+    @media all and (min-width:992px){
+        font-size: 1.2rem;
+    }
 }
 .mapa{
     padding: 10px;
@@ -94,8 +96,8 @@ body{
     color:$color-principal;
     transition: all 250ms;
     &:hover{
-        transform: scale(1.1);
-        color:$color-secundario;
+        transform: scale(1.05);
+        color:$color-texto-secundario;
     }
 }
 .tabladespacho{
@@ -104,34 +106,57 @@ body{
             @include anchoMaximo(100%)
         }
 }
-.galeria-categorias{
-    h3{
-        font-weight: 700;
+.accordion-button{
+    font-size: 14px;
+    @media all and (min-width:576px) and (max-width:992px){
+        font-size: 0.9rem;
     }
+    @media all and (min-width:992px){
+        font-size: 1.2rem;
+    }
+    &:not(.collapsed){
+        color:$color-texto-secundario;
+        background-color: $color-fondo-acordeon;
+        border-color: $color-principal;
+    }
+    &:focus{
+        box-shadow: inherit;
+    }
+}
+.galeria-categorias{
     .elemento-categoria{
-        transition: all 250ms;
-        @media all and (max-width:576px){
-            font-size: 0.8rem;
-            @include anchoMaximo(45%)
-        }
-        @media all and (min-width:576px) and (max-width:768px){
-            font-size: 0.9rem;
-            @include anchoMaximo(30%)
-        }
-        @media all and (min-width:768px){
-            @include anchoMaximo(24%)
-        }
         .card-title{
             font-weight: 500;
+            font-size: 14px;
+            @media all and (min-width:576px) and (max-width:992px){
+                font-size: 1.2rem;
+            }
+            @media all and (min-width:992px){
+                font-size: 1.5rem;
+            }
         }
         .card-text{
+            font-size: 12px;
             font-style: italic;
             span{
             font-weight: bold;
             }
+        }   
+        .botongaleria{
+            @extend %boton;
+            font-size: 12px;
+            @media all and (min-width:576px) and (max-width:992px){
+                font-size: 1.1rem;
+            }
+            @media all and (min-width:992px){
+                font-size: 1.2rem;
+            }
         }
-        &:hover{
-            transform: scale(1.2);
-        }        
+        @media all and (max-width:992px){
+            @include anchoMaximo(45%)
+        }
+        @media all and (min-width:992px){
+            @include anchoMaximo(30%)
+        }
     }
 }

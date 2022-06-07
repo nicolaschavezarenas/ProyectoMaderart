@@ -43,8 +43,8 @@
 		</nav>
 	</div>
 
-	<div class="subtitulo my-1 my-md-3 my-xl-5">
-		<h3 class="text-center">Formulario Cotizaciones</h3>
+	<div class="subtitulo my-1 my-md-3 my-xl-5 col-10 offset-1">
+		<p class="text-center">Formulario Cotizaciones</p>
 	</div>
 	<h5 class="col-10 offset-1">Ingresa los detalles de tu pedido para realizar una cotización.</h5>
 	<form class="row g-3 col-10 offset-1 pb-3">
@@ -73,7 +73,7 @@
 				<option>Otra Categoría</option>
 			</select>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<div>
 				<label class="form-label" for="flexRadioDefault">Selecciona tu tipo de entrega</label>
 			</div>
@@ -90,7 +90,7 @@
 					</label>
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-4">
 		  	<label for="comuna" class="form-label">Comuna</label>
 		  	<select id="comuna" class="form-select">
 				<option selected>Seleccione...</option>
@@ -99,6 +99,10 @@
 				<option>Nancagua</option>
 				<option>Otra (mencionar en detalle)</option>
 		  	</select>
+		</div>
+		<div class="col-md-4">
+			<label for="codigo" class="form-label">Código Producto</label>
+			<input type="text" class="form-control" id="codigo" placeholder="(Opcional) Código de la sección Galería">
 		</div>
 		<div class="mb-3">
 			<label for="detalle" class="form-label">Ingresa el detalle de tu pedido:</label>
