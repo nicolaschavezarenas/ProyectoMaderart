@@ -11,7 +11,16 @@ body {
 
 #footer {
   background-color: #F2D479;
-  color: white;
+}
+
+#footer .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.titulomodal {
+  background-color: #cec8c8;
 }
 
 .logo {
@@ -129,6 +138,12 @@ body {
   color: black;
 }
 
+.botoncotizaciones:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .palabraEnlace {
   color: #F2D479;
   -webkit-transition: all 250ms;
@@ -171,8 +186,9 @@ body {
 }
 
 .accordion-button:focus {
-  -webkit-box-shadow: inherit;
-          box-shadow: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 .galeria-categorias .elemento-categoria .card-title {
@@ -215,6 +231,12 @@ body {
   .galeria-categorias .elemento-categoria .botongaleria {
     font-size: 1.2rem;
   }
+}
+
+.galeria-categorias .elemento-categoria .botongaleria:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 @media all and (max-width: 992px) {

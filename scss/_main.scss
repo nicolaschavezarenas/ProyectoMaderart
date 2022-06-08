@@ -4,11 +4,19 @@ body{
 }
 .bgnavegador{
     background-color: $color-principal;
-    color:white;
+    color:$color-texto-principal;
 }
 #footer{
     background-color: $color-principal;
-    color:white;
+    .btn{
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+.titulomodal{
+    background-color: rgb(206, 200, 200);
 }
 @mixin anchoMaximo($maxwidth){
     max-width: $maxwidth;
@@ -91,6 +99,10 @@ body{
         background-color: $color-secundario;
         color: $color-texto-secundario;
     }
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
 }
 .palabraEnlace{
     color:$color-principal;
@@ -120,7 +132,8 @@ body{
         border-color: $color-principal;
     }
     &:focus{
-        box-shadow: inherit;
+        box-shadow: none;
+        outline: none;
     }
 }
 .galeria-categorias{
@@ -150,6 +163,10 @@ body{
             }
             @media all and (min-width:992px){
                 font-size: 1.2rem;
+            }
+            &:focus{
+                box-shadow: none;
+                outline: none;
             }
         }
         @media all and (max-width:992px){

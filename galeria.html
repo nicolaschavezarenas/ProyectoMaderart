@@ -414,7 +414,7 @@
 	<div class="modal fade" id="botonCotizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header titulomodal">
 			<h5 class="modal-title" id="exampleModalLabel">Cotizar Producto</h5>
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
@@ -452,10 +452,25 @@
 								</div>
 							</div>
 							<div class="col-auto">
-								<button type="submit" class="btn btn-outline-light mb-4">
+								<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#botonSuscribir">
 									Suscribir
 								</button>
 							</div>
+							<!-- Modal-->
+								<div class="modal fade" id="botonSuscribir" tabindex="-1" aria-labelledby="FooterModal" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header titulomodal">
+												<h5 class="modal-title" id="FooterModal">Mail Registrado</h5>
+												<button type="button submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												Te hemos registrado en nuestro Newsletter											
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- Modal-->
 					</div>
 				</form>
 			</section>
